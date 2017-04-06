@@ -1,0 +1,49 @@
+.inicio {
+  width: 960px;
+}
+
+div .fabrica {
+  width: 480px;
+  float: left;
+}
+
+div .interna {
+  width: 480px;
+  float: right;
+}
+
+figcaption {
+  margin-bottom: 15px;
+}
+
+#fabrica img,
+#interna img {
+  margin-top: 15px;
+  height: 300px;
+  text-align: center;
+  width: 400px;
+}
+
+#fabrica img,
+#interna img {
+  border: solid 5px #FFEBCD;
+  border-radius: 5%;
+  box-shadow: inset 3px 3px 10px #999;
+}
+
+.article h2 {
+  font-size: 30px;
+  padding-top: 40px;
+  margin-bottom: 20px;
+  color: black;
+  margin-right: 20px;
+  margin-left: 20px;
+  font-weight: bold;
+  clear: both;
+}
+
+#video {
+  margin: 10px 200px 40px;
+  width: 560px;
+  height: 315px;
+}

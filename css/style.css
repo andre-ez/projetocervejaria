@@ -1,0 +1,337 @@
+@font-face {
+  font-family: Lora, sans-serif;
+  src: url(font/Lora-Regular.ttf);
+}
+
+@font-face {
+  font-family: Oxygen, sans-serif;
+  src: url(font/Oxygen-Regular.ttf);
+}
+
+@font-face {
+  font-family: Lato, sans-serif;
+  src: url(font/Lato-Regular.ttf);
+}
+
+html, body {
+  margin: 0;
+}
+
+body {
+  font-family: Lora, sans-serif;
+  color: #333;
+  font-size: 14px;
+  line-height: 20px;
+}
+
+main {
+  background-color: #F5F5F5;
+}
+
+.container {
+  width: 960px;
+  margin: auto;
+}
+
+.box-shadow {
+  box-shadow: 0 2px 2px 0 rgba(0,0,0,0.14), 0 1px 5px 0 rgba(0,0,0,0.12), 0 3px 1px -2px rgba(0,0,0,0.2);
+}
+
+/* navigation */
+header {
+  background: url('../img/copost.png'), linear-gradient(gray, black);
+  background-repeat: repeat-x;
+  height: 190px;
+  vertical-align: bottom;
+  background-blend-mode: color-burn;
+  opacity: 0.8;
+  background-size: contain;
+}
+
+.logo {
+  width: 230px;
+  margin-left: 0.8%;
+}
+
+.lista {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 10px;
+  margin-right: 75px;
+}
+
+.caneca {
+  position: fixed;
+  top: 20px;
+  right: 25px;
+  width: 35px;
+  height: 45px;
+  transform: rotate(0) scale(1.0);
+  transition: all 1s;
+}
+
+.caneca:hover {
+  transform: rotate(-25deg) scale(1.2);
+  transition: all 1s;
+}
+
+.topo {
+  position: fixed;
+  top: 68px;
+  right: 10px;
+  width: 70px;
+  height: 45px;
+  font-size: 12px;
+  text-align: center;
+  color: transparent;
+}
+
+.topo:hover {
+  color: blue;
+}
+
+header ul li {
+  font-size: 15px;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+  padding-top: 29px;
+  font-family: Lora, sans-serif;
+  text-align: justify;
+}
+
+header ul li a {
+  text-decoration: none;
+  color: white;
+  background-color: #cd5c5c;
+  padding: 5px 10px;
+  border-radius: 25px;
+  box-shadow: inset 2.5px 0 4px #FFF;
+}
+
+header li:hover {
+  transform: scale(1.15) translateX(8px);
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+header p:not(.topo) {
+  position: relative;
+  bottom: 20px;
+  text-align: center;
+  font-size: 40px;
+  color: white;
+  text-shadow: 2px 2px 1px black, -2px -2px 1px black;
+  font-weight: bold;
+  padding-bottom: 10px;
+  font-family: "Segoe UI","Arial","Times New Roman";
+}
+
+.article {
+  background: url(../img/back.png) no-repeat;
+  background-size: cover;
+  width: 100%;
+  letter-spacing: 1px;
+  line-height: 20px;
+}
+
+.article h1 {
+  font-size: 50px;
+  padding-top: 40px;
+  margin-bottom: 20px;
+}
+
+.article p {
+  padding-bottom: 10px;
+  text-indent: 30px;
+  text-align: justify;
+}
+
+.inicio h1,
+.inicio p,
+.inicio figure {
+  color: black;
+  margin-right: 20px;
+  margin-left: 20px;
+  font-weight: bold;
+}
+
+.article figure {
+  text-align: center;
+}
+
+#brinde img {
+  width: 350px;
+  margin-bottom: 20px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+#producao {
+  float: right;
+}
+
+#producao img {
+  width: 288px;
+  height: 384px;
+  margin-top: 20px;
+}
+
+.article figcaption {
+  font-size: 12px;
+  letter-spacing: 0.2px;
+  font-variant: small-caps;
+}
+
+#brinde img,
+#producao img {
+  border: solid 5px #FFEBCD;
+  border-radius: 5%;
+  box-shadow: inset 3px 3px 10px #999;
+}
+
+/* footer */
+body>footer {
+  background-image: -ms-linear-gradient(bottom, rgb(0,0,0) 0%, rgb(128,118,74) 50%, rgb(155,149,145) 75%, rgb(139,134,130) 87.5%, rgb(0,0,0) 100%);
+  background-image: -moz-linear-gradient(bottom, rgb(0,0,0) 0%, rgb(128,118,74) 50%, rgb(155,149,145) 75%, rgb(139,134,130) 87.5%, rgb(0,0,0) 100%);
+  background-image: -o-linear-gradient(bottom, rgb(0,0,0) 0%, rgb(128,118,74) 50%, rgb(155,149,145) 75%, rgb(139,134,130) 87.5%, rgb(0,0,0) 100%);
+  background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0, rgb(0,0,0)), color-stop(50, rgb(128,118,74)), color-stop(75, rgb(155,149,145)), color-stop(87.5, rgb(139,134,130)), color-stop(100, rgb(0,0,0)));
+  background-image: -webkit-linear-gradient(bottom, rgb(0,0,0) 0%, rgb(128,118,74) 50%, rgb(155,149,145) 75%, rgb(139,134,130) 87.5%, rgb(0,0,0) 100%);
+  background-image: linear-gradient(to top, rgb(0,0,0) 0%, rgb(128,118,74) 50%, rgb(155,149,145) 75%, rgb(139,134,130) 87.5%, rgb(0,0,0) 100%);
+  height: 190px;
+  width: 100%;
+  margin: 0 auto;
+  color: #fff;
+}
+
+footer .form {
+  display: inline-block;
+  width: 40%;
+  margin-right: 1%;
+  vertical-align: top;
+}
+
+footer .form p {
+  font-size: 1px;
+  color: transparent;
+}
+
+footer .map {
+  display: inline-block;
+  margin-top: 14px;
+  margin-left: 30px;
+}
+
+#formulario {
+  position: absolute;
+  display: block;
+}
+
+fieldset {
+  background: rgba(0, 0, 0, 0.4);
+  width: 325px;
+  height: 182px;
+}
+
+fieldset legend {
+  text-shadow: 2px 2px 1px black, -2px -2px 1px black;
+  font-weight: bold;
+  padding-bottom: 10px;
+  font-family: "Segoe UI","Arial","Times New Roman";
+  color: white;
+}
+
+#formulario label {
+  position: absolute;
+  left: 19px;
+  margin-right: 5px;
+}
+
+#formulario input.campo_nome {
+  background-color: #DADCDC;
+  position: absolute;
+  left: 95px;
+  top: 23px;
+  width: 225px;
+}
+
+#formulario input.campo_email {
+  background-color: #DADCDC;
+  position: absolute;
+  left: 95px;
+  width: 225px;
+}
+
+#formulario textarea.msg {
+  position: absolute;
+  margin-left: 6%;
+  background-color: #DADCDC;
+}
+
+#formulario input.btn_submit {
+  border-style: solid;
+  position: absolute;
+  bottom: 0.5em;
+  right: 10px;
+  background-color: #CDC9C9;
+}
+
+#formulario input.btn_submit:hover {
+  border-style: solid;
+  position: absolute;
+  bottom: 0.5em;
+  right: 10px;
+  background-color: #8B8989;
+}
+
+div .container {
+  width: 400px;
+  margin: 0 auto;
+}
+
+footer .icon {
+  display: inline-block;
+  width: 27%;
+  margin-right: 20px;
+  margin-bottom: 70px;
+}
+
+footer .social li {
+  float: left;
+  margin-left: 25px;
+  border: solid 3px white;
+  border-radius: 3px;
+}
+
+footer ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+footer .social a {
+  height: 32px;
+  width: 32px;
+  display: block;
+  text-indent: -9999px;
+}
+
+footer .social a[href*="youtube.com"] {
+  background-color: white;
+  background-image: url(../img/youtube.png)
+}
+
+footer .social a[href*="facebook.com"] {
+  background-image: url(../img/facebook.png);
+}
+
+footer .social a[href*="twitter.com"] {
+  background-image: url(../img/twitter.png);
+}
+
+footer .social a[href*="plus.google.com"] {
+  background-image: url(../img/googleplus.png);
+}
